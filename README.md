@@ -1,9 +1,4 @@
-# todo-list
-To create a readme file for the provided code, you can follow these steps:
-
-## Project Name
-
-To-Do List App
+## To-Do List App
 
 ## Description
 
