@@ -1,42 +1,32 @@
-## To-Do List App
+# ToDo List
 
-## Description
+This is a web app that lets users create and manage their to-do lists. The app has two pages: home and work. The home page shows the items for the current day and the work page shows the items for the work-related tasks. The user can add new items to either list by typing in the input field and clicking the add button. The user can also switch between the pages using the links on the navbar.
 
-This is a web application that allows users to create to-do lists, add items to the lists, mark items as completed, and delete items. It uses the Express framework for handling HTTP requests, MongoDB for data storage, and EJS as the templating engine for rendering views.
+## Technologies
+
+- Node.js
+- Express
+- EJS
+- Body-parser
 
 ## Installation
 
-1. Clone the repository or download the code files.
-2. Install Node.js and npm (Node Package Manager) if they are not already installed on your system.
-3. Open a terminal or command prompt and navigate to the project directory.
-4. Run the following command to install the required dependencies:
+To run this app, you need to have Node.js and npm installed on your system. You also need to install the dependencies listed in the `package.json` file. To install the dependencies, run the following command in the project directory:
 
-   ```
-   npm install
-   ```
-
-5. Create a MongoDB Atlas account (https://www.mongodb.com/cloud/atlas) and obtain the connection string for your database.
-6. Replace the MongoDB connection string in the code with your own connection string. You can find it in the `mongoose.connect()` statement.
-7. Optionally, customize the port number (`process.env.PORT || 3000`) in the `app.listen()` statement.
+```bash
+npm install
+```
 
 ## Usage
 
-1. Start the server by running the following command:
+To start the app, use the following command:
 
-   ```
-   npm start
-   ```
+```bash
+node app.js
+```
 
-2. Open a web browser and navigate to `http://localhost:3000` (or the port number you specified).
+The app will run on `http://localhost:3000/`. You can navigate to different pages using the links on the navbar. You can add new items to either list by typing in the input field and clicking the add button.
 
-3. You will see the default to-do list for the current day. You can add new items by entering text in the input field and clicking the "+" button. You can mark items as completed by checking the checkbox and delete items by clicking the trash icon.
+## License
 
-4. To create a custom to-do list, enter a custom list name in the URL after the slash, e.g., `http://localhost:3000/Work`. This will create a new list or load an existing list with the given name. You can then add, mark, or delete items in the same way as the default list.
-
-5. To delete a custom list, click the "Delete List" button at the bottom of the list.
-
-6. To retrieve a JSON array of all list names, you can send a GET request to `/api/names`. This will return a JSON response with an array of list names.
-
-## Hosted Demo
-
-A live demo of this application is available at [https://todolist-uvfx.onrender.com/](https://todolist-uvfx.onrender.com/).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
