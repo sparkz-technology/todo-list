@@ -26,7 +26,3 @@ node app.js
 ```
 
 The app will run on `http://localhost:3000/`. You can navigate to different pages using the links on the navbar. You can add new items to either list by typing in the input field and clicking the add button.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
